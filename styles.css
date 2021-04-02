@@ -43,3 +43,23 @@ header .fa-microphone{
     position: absolute;
     right: 10px;
 }
+
+/* Main Styled(WeatherWindow) */
+
+main{
+    width: 80%;
+    height: auto;
+    /* background-color: black; */
+    margin: 130px auto 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.weather-div{
+    width: 200px;
+    height: 300px;
+    margin: 0 20px;
+    /* background-color: white; */
+    border: 1px solid white;
+    border-radius: 10px;
+}
