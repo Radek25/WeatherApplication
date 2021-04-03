@@ -9,15 +9,20 @@ document.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    CreateWeatherDiv();
+    CreateWeatherTile();
     WeatherCounter++;
   }
 });
 
 //Temporarily!!
+
 const WeatherWindow = document.querySelector('main');
 
-function CreateWeatherDiv() {
+function CreateWeatherTile() {
+
+  let Location = GetLocationFromInput();
+  console.log(Location);
+  
     if (WeatherCounter <=3) {
         const WeatherDiv = document.createElement('div');
         WeatherDiv.classList.add('weather-div');
