@@ -7,6 +7,7 @@ async function GetWeatherFromAPI(Location) {
     if (DataFromAPI.ok) {
         return DataFromAPI.json()
     } else {
+        alert('Nie znaleziono lokalizacji!');
         return Promise.reject(`Error: ${DataFromAPI.status}`)
     }
 }
