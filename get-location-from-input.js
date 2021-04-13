@@ -1,3 +1,13 @@
+let DataArray = [];
+
+let Data = {
+    Id : null,
+    Location : null,
+};
+
 function GetLocationFromInput() {
-  return(document.querySelector('input').value);
+    Data.Id = new Date().getTime();
+    Data.Location = document.querySelector('input').value;
+    DataArray.push(JSON.parse(JSON.stringify(Data)));
+    return DataArray;
 }
