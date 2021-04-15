@@ -1,7 +1,10 @@
 const LSkey = 'Weather';
 
 function SetLocalStorage(DataFromInput) {
-    localStorage.setItem(LSkey, JSON.stringify(DataFromInput));
+    let LocationArray = [];
+    LocationArray = JSON.parse(localStorage.getItem(LSkey)) || [];
+    LocationArray.push(DataFromInput);
+    localStorage.setItem(LSkey, JSON.stringify(LocationArray));
 }
 
 function GetLocalStorage() {
