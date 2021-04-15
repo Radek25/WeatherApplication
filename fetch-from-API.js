@@ -6,8 +6,7 @@ function WeatherFromAPI(){
 
         fetch(Weather)
             .then(WeatherData => WeatherData.json())
-            .then(WeatherData => {
-            console.log(WeatherData);
+            .then(WeatherData => {CreateTile(WeatherData);
         })
     }
 }

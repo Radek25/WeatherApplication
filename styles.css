@@ -49,17 +49,89 @@ header .fa-microphone{
 main{
     width: 80%;
     height: auto;
-    /* background-color: black; */
+    background-color: black;
     margin: 120px auto 40px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.weather-div{
+.weather-tile{
     width: 200px;
     height: 300px;
     margin: 10px 20px;
-    /* background-color: white; */
+    background-color: white;
     border: 1px solid white;
     border-radius: 10px;
+    position: relative;
+}
+.delete-sign{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 10px;
+    position: absolute;
+    background-color: red;
+    display: none;
+}
+.location-and-country{
+    text-align: center;
+    margin: 5px auto;
+    width: 90%;
+    height: 30px;
+    font-size: 25px;
+    background-color: green;
+}
+.temperature{
+    width: 70px;
+    height: auto;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: red;
+}
+.weather-icon{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+.weather-description{
+    width: 80%;
+    height: 20px;
+    background-color: yellow;
+    margin: 0 auto 5px;
+}
+.extra-data-wrapper{
+    width: 80%;
+    height: 20px;
+    background-color: red;
+    margin: 10px auto;
+}
+.extra-data-wrapper{
+    width: 90%;
+    height: 30px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.extra-data-0, .extra-data-1, .extra-data-2{
+    width: 30%;
+    height: 20px;
+    background-color: red;
+}
+.sun-time-wrapper{
+    width: 90%;
+    height: 30px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+.sun-time-1, .sun-time-2{
+    background-color: blue;
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
 }
