@@ -5,24 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b1320fcef3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poppins:ital,wght@1,300&family=Raleway:ital,wght@1,300&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- GoogleFonts -->
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./Styles/general-styles.css">
+    <link rel="stylesheet" href="./Styles/header-styles.css">
+    <link rel="stylesheet" href="./Styles/main-styles.css">
+    <link rel="stylesheet" href="./Styles/weather-tile-styles.css">
+     <!-- Styles CSS -->
     <title>WeatherApp</title>
 </head>
 <body>
     <header>
         <i class="fas fa-search-location"></i>
         <input type="text" placeholder="Location">
-        <i class="fas fa-microphone"></i>
+        <!-- <i class="fas fa-microphone"></i> -->
         <i class="fas fa-trash"></i>
     </header>
     <main>
     </main>
-    <script src="local-storage-functionalities.js"></script>
-    <script src="fetch-from-API.js"></script>
-    <script src="mainscript.js"></script>
-    <script src="get-location-from-input.js"></script>
-    <script src="create-weather-tiles.js"></script>
-    <script src="show-remove-tile.js"></script>
-    <script src="remove-weather-tile.js"></script>
+    <!-- LocalStorageFunctions -->
+    <script src="./JavaScript/LocalStorageFunctions/get-local-storage.js"></script>
+    <script src="./JavaScript/LocalStorageFunctions/set-local-storage.js"></script>
+    <script src="./JavaScript/LocalStorageFunctions/remove-from-local-storage.js"></script>
+    <!-- LocalStorageFunctions -->
+    <!-- FetchFromAPI -->
+    <script src="./JavaScript/FetchFromAPI/fetch-from-API.js"></script>
+    <!-- FetchFromAPI -->
+    <!-- GetLocationFromUserInput -->
+    <script src="./JavaScript/GetLocationFromUserInput/get-location-from-input.js"></script>
+    <!-- GetLocationFromUserInput -->
+    <!-- CreateWeatherTileFunctions -->
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-weather-tiles.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-remove-tile-div.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-location-and-country-div.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-temperature-div.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-icon-div.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-description-div.js"></script>
+    <script src="./JavaScript/CreateWeatherTileFunctions/create-extra-info-div.js"></script>
+    <!-- CreateWeatherTileFunctions -->
+    <!-- ShowRemoveWeatherTile -->
+    <script src="./JavaScript/ShowRemoveWeatherTile/show-remove-tile.js"></script>
+    <!-- ShowRemoveWeatherTile -->
+    <!-- MainScript -->
+    <script src="./JavaScript/mainscript.js"></script>
+    <!-- MainScript -->
 </body>
 </html>
