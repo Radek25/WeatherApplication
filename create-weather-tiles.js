@@ -1,12 +1,15 @@
 const Main = document.querySelector('main');
-function CreateTile(WeatherData) {
+
+function CreateTile(WeatherData, WeatherDataID) {
     const WeatherTile = document.createElement('div');
     WeatherTile.classList.add('weather-tile')
     Main.appendChild(WeatherTile);
+    WeatherTile.id = WeatherDataID;
 
-    const DeleteSign = document.createElement('div');
-    DeleteSign.classList.add('delete-sign');
-    WeatherTile.appendChild(DeleteSign);
+    const RemoveTile = document.createElement('div');
+    RemoveTile.classList.add('remove-tile');
+    RemoveTile.innerHTML = '<i class="fas fa-trash"></i>';
+    WeatherTile.appendChild(RemoveTile);
 
     const LocationAndCountry = document.createElement('p');
     LocationAndCountry.classList.add('location-and-country');
@@ -45,13 +48,11 @@ function CreateTile(WeatherData) {
         SunTimeWrapper.appendChild(SunTime[index]);
     }
     WeatherTile.appendChild(SunTimeWrapper);
-    // WeatherData.name,
-    // WeatherData.sys.country,
-    // WeatherData.weather[0].icon,
-    // WeatherData.weather[0].description,
-    // Math.floor((WeatherData.main.temp - 273.15), 2),
-    // WeatherData.main.pressure,
-    // Math.floor(WeatherData.wind.speed),
-    // WeatherData.main.humidity,
-    
+    ShowRemoveTail();
+
+    WeatherTile.addEventListener('click', ()=>{
+        WeatherTile.remove();
+        WeatherTileID = WeatherTile.id;  
+        RemoveFromLocalStorage(WeatherTileID);
+    })
 }

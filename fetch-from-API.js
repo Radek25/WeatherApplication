@@ -6,7 +6,7 @@ function WeatherFromAPI(MainArray){
 
         fetch(Weather)
             .then(WeatherData => WeatherData.json())
-            .then(WeatherData => {CreateTile(WeatherData);
+            .then(WeatherData => {CreateTile(WeatherData, MainArray[index].Id);
         })
     }
 }

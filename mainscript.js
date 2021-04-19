@@ -8,6 +8,7 @@ function MainFunction() {
             SetLocalStorage(GetLocationFromInput());
             Main.innerHTML = '';
             WeatherFromAPI(GetLocalStorage());
+
         }
     });
 }
