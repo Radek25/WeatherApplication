@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(/imgs/background.png);
+    background-image: url(../imgs/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 96vh;
