@@ -8,5 +8,10 @@ function WeatherFromAPI(MainArray){
             .then(WeatherData => WeatherData.json())
             .then(WeatherData => {CreateTile(WeatherData, MainArray[index].Id);
         })
+        .catch(error => {
+            window.location.reload();
+            alert('Błąd! Nie znaleziono lokalizacji!')
+            RemoveFromLocalStorage(MainArray[index].Id);
+        });
     }
 }

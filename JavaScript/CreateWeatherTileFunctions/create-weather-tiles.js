@@ -13,5 +13,4 @@ function CreateTile(WeatherData, WeatherDataID) {
     CreateDescriptionDiv(WeatherTile, WeatherData);
     CreateExtraInfoDiv(WeatherTile, WeatherData);
     ShowRemoveTail();
-
 }

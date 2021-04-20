@@ -7,13 +7,8 @@ function CreateExtraInfoDiv(WeatherTile, WeatherData) {
         ExtraData[index].classList.add(`extra-data-${index}`)
         ExtraDataWrapper.appendChild(ExtraData[index]);
     }
-    const Percent = document.createElement('span');
-    Percent.innerHTML = '%';
-    Percent.classList.add('unit-persent');
-    ExtraData[0].appendChild(Percent);
-    ExtraData[0].innerHTML =`<i class="fas fa-tint"></i> ${WeatherData.main.humidity}${Percent.innerHTML}`;
+    ExtraData[0].innerHTML =`<i class="fas fa-tint"></i> ${WeatherData.main.humidity}%`;
     ExtraData[1].innerHTML =`<i class="fas fa-thermometer-half"></i> ${WeatherData.main.pressure}hPa`;
     ExtraData[2].innerHTML =`<i class="fas fa-wind"></i> ${Math.floor(WeatherData.wind.speed)}m/s`;
-    console.log(WeatherData);
     WeatherTile.appendChild(ExtraDataWrapper);
 }

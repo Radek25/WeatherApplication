@@ -1,5 +1,4 @@
 function MainFunction() {
-    
     let SearchButton = document.querySelector('.fa-search-location')
     
     WeatherFromAPI(GetLocalStorage());
