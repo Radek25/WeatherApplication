@@ -4,14 +4,15 @@ function MainFunction() {
     WeatherFromAPI(GetLocalStorage());
 
     SearchButton.addEventListener('click', ()=>{
-        SetLocalStorage(GetLocationFromInput());
-        Main.innerHTML = '';
-        WeatherFromAPI(GetLocalStorage());
+        alert('Funkcjonalność w rozbudowie :/ Aby wyszukać lokalizacje, wprowadź jej nazwę i naćiśnij Enter!')
     })
     document.addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
             event.preventDefault();
-            SearchButton.click();
+            // SearchButton.click();
+            SetLocalStorage(GetLocationFromInput());
+            Main.innerHTML = '';
+            WeatherFromAPI(GetLocalStorage());
         }
     });
 

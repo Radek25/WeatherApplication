@@ -10,7 +10,7 @@ function WeatherFromAPI(MainArray){
         })
         .catch(error => {
             window.location.reload();
-            alert('Błąd! Nie znaleziono lokalizacji!')
+            alert('Błąd! Nie znaleziono lokalizacji!');
             RemoveFromLocalStorage(MainArray[index].Id);
         });
     }
